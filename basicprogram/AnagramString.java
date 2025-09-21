@@ -39,5 +39,6 @@ public class AnagramString {
 
         }
 
+        System.out.println("Nikita");
     }
 }
