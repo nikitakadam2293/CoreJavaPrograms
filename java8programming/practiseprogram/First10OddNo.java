@@ -1,6 +1,7 @@
 package java8programming.practiseprogram;
 
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 // 30) First 10 odd numbers
@@ -17,5 +18,10 @@ public class First10OddNo {
         System.out.println("First 10 even no : ");
 
         Stream.iterate(0,x->x+2).limit(10).forEach(System.out::println);
+
+
+        System.out.println("================== 2 table ===========");
+        IntStream.rangeClosed(1,10).map(e->e*2).forEach(System.out::println);
+
     }
 }

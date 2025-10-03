@@ -3,6 +3,7 @@ package java8programming.practiseprogram;
 import java.util.Arrays;
 import java.util.LinkedHashMap;
 import java.util.Map;
+import java.util.Optional;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
@@ -16,6 +17,14 @@ public class FirastNonRepeatedCharacterInString {
 
         Map<String,Long> charCount = Arrays.stream(str.split(""))
                 .collect(Collectors.groupingBy(Function.identity(), LinkedHashMap::new,Collectors.counting()));
+
+        Map<Character,Long> mm = str.chars().mapToObj(e->(char) e).collect(Collectors.groupingBy(Function.identity(),Collectors.counting()));
+        System.out.println("ppp" +mm);
+         Optional<Character> x =  mm.entrySet().stream().filter(e->e.getValue()==1).map(s->s.getKey()).findFirst();
+        System.out.println(x);
+
+
+
 
         String firstNonrepeatedChar = charCount.entrySet()
                 .stream()

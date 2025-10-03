@@ -1,5 +1,6 @@
 package basicprogram.BasicPrgm;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 class Array1 {
@@ -31,7 +32,7 @@ class Array1 {
 
         System.out.println( "Max is: " +max);
 
-        //for(int )
+
 
 
     }

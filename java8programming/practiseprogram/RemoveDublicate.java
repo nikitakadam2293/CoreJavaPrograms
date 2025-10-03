@@ -13,5 +13,7 @@ public class RemoveDublicate {
 
         System.out.println("Unique element from list : " + l); // Unique element from list : [one, two, three, four, seven]
 
+        System.out.println("[[");
+        list.stream().distinct().forEach(System.out::println);
     }
 }

@@ -19,5 +19,8 @@ public class JoinPrefixAndSufix {
 
         System.out.println("Original String :  "+list);
 
+
+       String l =   list.stream().collect(Collectors.joining(" ** "," AA "," ZZ   "));
+        System.out.println("ANSWER :  " + l);
     }
 }

@@ -13,7 +13,7 @@ public class findCommonElementBetweenTwoArrray {
 
 
         List<Integer> l1 = Arrays.asList(1,3,2,4,10,33,99,44);
-        List<Integer> l2 = Arrays.asList(1 ,44,22,2,3,99,66);
+        List<Integer> l2 = Arrays.asList(1,44,22,2,3,99,66);
 
         System.out.println("Integer::");
         l1.stream().filter(l2::contains).forEach(System.out::println);

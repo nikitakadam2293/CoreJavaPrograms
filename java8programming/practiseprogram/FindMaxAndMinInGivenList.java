@@ -12,6 +12,8 @@ public class FindMaxAndMinInGivenList {
 
        int min = list.stream().min(Comparator.naturalOrder()).get();
 
+        System.out.println("llllist  in sorted order :  " + list);
+
         System.out.println("Minimum No : " + min); // 0
 
         int max = list.stream().max(Comparator.naturalOrder()).get();

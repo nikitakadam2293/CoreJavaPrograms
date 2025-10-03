@@ -9,7 +9,7 @@ public class FindDublicateElementFromArray {
 
     public static void main(String[] args) {
 
-        List<Integer> list = Arrays.asList(2,1,44,1,44,7,88,44,1,2);
+        List<Integer> list = Arrays.asList(2,1,44,1,44,7,88,44,1,2,88);
 
         Set<Integer> uniqueElement = new TreeSet<>();
 
@@ -20,9 +20,10 @@ public class FindDublicateElementFromArray {
         System.out.println("============================");
 
 
-        Set<Integer>  unique = new HashSet<>();
-        Set<Integer> d = list.stream().filter(e-> ! unique.add(e)).collect(Collectors.toSet());
-        System.out.println("Dublicate : " +d);   // Dublicate : [1, 2, 44]
+        Set<Integer>  dublicate1 = new HashSet<>();
+        Set<Integer> d = list.stream().filter(e-> ! dublicate1.add(e)).collect(Collectors.toSet());
+        System.out.println("Dublicate : " +d);   // Dublicate : [1, 2,88, 44]
+
 
 
     }

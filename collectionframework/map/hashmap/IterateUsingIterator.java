@@ -27,7 +27,7 @@ public class IterateUsingIterator {
 
         System.out.println("============================");
         itr.remove();
-        System.out.println( "Remo both key and valu" + hmap.entrySet());  //[B, D, H]
+        System.out.println( "Remo both key and valu" + hmap.entrySet());  //[B=Ball, D=Apple, H=Horse]
 
         System.out.println("======================================");
         System.out.println("");
@@ -46,7 +46,7 @@ public class IterateUsingIterator {
 
         System.out.println("**********************************************");
 
-        itr.remove();
+      //  itr.remove();
         System.out.println("Remove key : " + hmap.keySet());
 
         System.out.println("**********************************************");

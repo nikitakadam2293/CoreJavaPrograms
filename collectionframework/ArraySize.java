@@ -17,6 +17,18 @@ public class ArraySize {
 
         System.out.println("list size after remove : " +list.size());
 
+        System.out.println("========");
+        String s1 = "bhag";
+        String s2 = "nik";
+
+         s2 = s1;
+        System.out.println ("mmm"+s2);
+
+
+
+
+        System.out.println("hhh "+ s1.replaceAll("nik",s2)) ;
+        System.out.println(s2.replaceAll("bhag",s1));
 
     }
 }

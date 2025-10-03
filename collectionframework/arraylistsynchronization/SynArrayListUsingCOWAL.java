@@ -16,12 +16,17 @@ public class SynArrayListUsingCOWAL {
 
         System.out.println("Displaying AL");
 
+        byte v = 11;
+        System.out.println("vv" +v);
         Iterator<String> itr = al.iterator();
 
         while (itr.hasNext())
         {
+            al.add("ss");
             String str= itr.next();
             System.out.println(str);
+
+
         }
     }
 }

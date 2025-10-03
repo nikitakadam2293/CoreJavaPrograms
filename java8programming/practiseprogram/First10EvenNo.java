@@ -11,5 +11,8 @@ public class First10EvenNo {
 
         IntStream.rangeClosed(1,10).map(i->i*2).forEach(System.out::println);
 
+        System.out.println("Odd Number .... ");
+
+        IntStream.rangeClosed(1,10).filter(i->i%2 !=0).forEach(System.out::println);
     }
 }

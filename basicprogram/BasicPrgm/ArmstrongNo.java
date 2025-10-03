@@ -16,7 +16,7 @@ public class ArmstrongNo {
         while (no>0)
         {
             int x;
-           int digit= no% 10;
+           int digit= no % 10;
            // sum = sum+ digit*digit*digit;
            sum= sum+Math.pow( digit, length);
 
